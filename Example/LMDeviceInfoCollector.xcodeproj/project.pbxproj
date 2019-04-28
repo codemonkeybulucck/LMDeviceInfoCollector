@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		038D8875F42B7797A6C2901E /* Pods-LMDeviceInfoCollector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMDeviceInfoCollector_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMDeviceInfoCollector_Example/Pods-LMDeviceInfoCollector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1DE3F16CF5D4C9538595C33C /* Pods-LMDeviceInfoCollector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMDeviceInfoCollector_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMDeviceInfoCollector_Tests/Pods-LMDeviceInfoCollector_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		422C92962DC5AC15311F720B /* LMDeviceInfoCollector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LMDeviceInfoCollector.podspec; path = ../LMDeviceInfoCollector.podspec; sourceTree = "<group>"; };
+		422C92962DC5AC15311F720B /* LMDeviceInfoCollector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LMDeviceInfoCollector.podspec; path = ../LMDeviceInfoCollector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BC032F9AB401B88B7A8EE89 /* Pods_LMDeviceInfoCollector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMDeviceInfoCollector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8B2421C523E8FF674FA2DB /* Pods-LMDeviceInfoCollector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMDeviceInfoCollector_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMDeviceInfoCollector_Example/Pods-LMDeviceInfoCollector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LMDeviceInfoCollector_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMDeviceInfoCollector_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,10 +63,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87455B5924D3F01030F91081 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		87455B5924D3F01030F91081 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9E3EE75C3CEF20736FFDFD08 /* Pods_LMDeviceInfoCollector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMDeviceInfoCollector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36E3E4AB7DCEC1657C47551 /* Pods-LMDeviceInfoCollector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMDeviceInfoCollector_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMDeviceInfoCollector_Tests/Pods-LMDeviceInfoCollector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F12A0D35B64DA36F0A8247AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F12A0D35B64DA36F0A8247AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "545390087@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = DXZ365TQ99;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -497,6 +500,7 @@
 			baseConfigurationReference = 038D8875F42B7797A6C2901E /* Pods-LMDeviceInfoCollector_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DXZ365TQ99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LMDeviceInfoCollector/LMDeviceInfoCollector-Prefix.pch";
 				INFOPLIST_FILE = "LMDeviceInfoCollector/LMDeviceInfoCollector-Info.plist";
@@ -512,6 +516,7 @@
 			baseConfigurationReference = 5E8B2421C523E8FF674FA2DB /* Pods-LMDeviceInfoCollector_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DXZ365TQ99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LMDeviceInfoCollector/LMDeviceInfoCollector-Prefix.pch";
 				INFOPLIST_FILE = "LMDeviceInfoCollector/LMDeviceInfoCollector-Info.plist";

@@ -1,0 +1,16 @@
+PODS:
+  - LMDeviceInfoCollector (1.0.0)
+
+DEPENDENCIES:
+  - LMDeviceInfoCollector (from `../`)
+
+EXTERNAL SOURCES:
+  LMDeviceInfoCollector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LMDeviceInfoCollector: 766f16c5a0b22fd303bcffe0df66fe05544803fc
+
+PODFILE CHECKSUM: d9c86b290908b07517500d37b86fe7975063300b
+
+COCOAPODS: 1.5.3

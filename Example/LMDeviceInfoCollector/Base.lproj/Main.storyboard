@@ -1,31 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="LMViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                <viewController id="BYZ-38-t0r" customClass="LMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyD-gc-1uW">
+                                <rect key="frame" x="60" y="45" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Lp-Ty-6Af"/>
+                                    <constraint firstAttribute="width" constant="92" id="a0T-Zg-LFh"/>
+                                </constraints>
+                                <state key="normal" title="展示设备信息"/>
+                                <connections>
+                                    <action selector="showDeviceInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9G-gV-zCI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqf-Y1-3Co">
+                                <rect key="frame" x="214" y="45" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="gT9-Lx-9yq"/>
+                                    <constraint firstAttribute="height" constant="30" id="gZa-wC-ozd"/>
+                                </constraints>
+                                <state key="normal" title="展示sim卡信息"/>
+                                <connections>
+                                    <action selector="showSimInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJf-fn-UhX"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ily-xc-Yfy">
+                                <rect key="frame" x="15" y="90" width="345" height="562"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-T2-hHg">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2iC-T2-hHg" firstAttribute="top" secondItem="Ily-xc-Yfy" secondAttribute="top" id="02I-md-Dh9"/>
+                                    <constraint firstAttribute="trailing" secondItem="2iC-T2-hHg" secondAttribute="trailing" id="TcV-o3-ogN"/>
+                                    <constraint firstItem="2iC-T2-hHg" firstAttribute="centerX" secondItem="Ily-xc-Yfy" secondAttribute="centerX" id="VUf-QY-ggz"/>
+                                    <constraint firstAttribute="bottom" secondItem="2iC-T2-hHg" secondAttribute="bottom" id="anA-px-h42"/>
+                                    <constraint firstItem="2iC-T2-hHg" firstAttribute="leading" secondItem="Ily-xc-Yfy" secondAttribute="leading" id="hFW-vO-BjC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ily-xc-Yfy" firstAttribute="top" secondItem="qyD-gc-1uW" secondAttribute="bottom" constant="15" id="273-NS-546"/>
+                            <constraint firstItem="Dqf-Y1-3Co" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="APR-dR-3nP"/>
+                            <constraint firstItem="Ily-xc-Yfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="F3b-Sf-hFY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ily-xc-Yfy" secondAttribute="bottom" constant="15" id="I9x-Yi-shb"/>
+                            <constraint firstItem="qyD-gc-1uW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="MFb-xQ-BQA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dqf-Y1-3Co" secondAttribute="trailing" constant="60" id="MMJ-e8-XWt"/>
+                            <constraint firstItem="qyD-gc-1uW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="mEv-If-KZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ily-xc-Yfy" secondAttribute="trailing" constant="15" id="qx5-ib-sNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="2iC-T2-hHg" id="8pI-cp-jPM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-496.80000000000001" y="97.601199400299862"/>
         </scene>
     </scenes>
 </document>
