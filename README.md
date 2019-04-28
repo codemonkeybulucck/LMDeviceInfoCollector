@@ -5,6 +5,20 @@
 [![License](https://img.shields.io/cocoapods/l/LMDeviceInfoCollector.svg?style=flat)](https://cocoapods.org/pods/LMDeviceInfoCollector)
 [![Platform](https://img.shields.io/cocoapods/p/LMDeviceInfoCollector.svg?style=flat)](https://cocoapods.org/pods/LMDeviceInfoCollector)
 
+## ScreenShot 
+
+![](screenshot1.png)
+![](screenshot2.png)
+
+## Usage
+
+```
+#import <LMDeviceInfoCollector/LMDeviceInfo.h>
+```
+
+Use the `+ (instancetype)shareDeviceInfo;` method to create  instance , and visit the property.
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
